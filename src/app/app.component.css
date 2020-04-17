@@ -30,7 +30,7 @@ background-color: #1d1e22;
 .scrolls{
     position: absolute;
     top:50%;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     right: 1.25em;
     z-index: 2;
     display: flex;
@@ -43,11 +43,12 @@ background-color: #1d1e22;
 
 }
 
+
 .scrolls .center{
     font-size: 0.825rem;
 }
 
-.banner{
+.content{
     position: relative;
     width: 100%;
     height: 100%;
@@ -64,9 +65,9 @@ background-color: #1d1e22;
     z-index: 1;
     display: flex;
     width: 100%;
-    min-height: 59px;
+    min-height: 150px;
     font-size: 1rem;
-    background-image: linear-gradient(180deg,#1d1e22, rgba(29,30,34,0.1),transparent );
+    background-image: linear-gradient(180deg,#1d1e22, rgba(29,30,34,0.120),transparent );
     mix-blend-mode:luminosity;
 }
 
@@ -89,6 +90,7 @@ background-color: #1d1e22;
 .header ul li a{
     position: relative;
     text-decoration: none;
+    
     text-transform: uppercase;
     font-weight: 599;
     color: #f4f4f4;
@@ -103,7 +105,7 @@ background-color: #1d1e22;
     content: '';
     width: 0;
     height: 3px;
-    transition: all 0.2s linear;
+    transition: all 1.2s linear;
 }
 
 .header ul li a:hover::after{
@@ -134,7 +136,7 @@ section h2{
     font-weight: 900;
     padding:  10px 21px;
     color: #1d1e22;
-    background-color: #f4f4f4;
+    --background-color: #f4f4f4;
     mix-blend-mode: screen;
     pointer-events: none;
     user-select: none;
@@ -145,43 +147,41 @@ section h2{
 
 section:nth-child(2){
     background-image: url(../assets/image/maos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
 }
 
 section:nth-child(3){
     background-image: url(../assets/image/costas.jpg);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     
 }
 section:nth-child(4){
     background-image: url(../assets/image/pesos.jpg);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 section:nth-child(5){
     background-image: url(../assets/image/pes.jpg);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
+.botao{
 
-
-
-
-/*Antes..............
-.banner{
-    display: flexbox;
-    position: absolute;
+    color: #FFF;
+    background-color: green;
+    border-radius: 50px;
+    height: 60px;
+    line-height: 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
 }
-.content img{
-    height: 300px;
-    width: 70%;
-    left: 140px;
-    
-    flex-direction: column;
-    position: relative;
-   
-    
-    
-   
-}
-*/
