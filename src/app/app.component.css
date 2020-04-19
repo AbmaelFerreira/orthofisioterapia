@@ -173,15 +173,29 @@ section:nth-child(5){
     background-size: cover;
     background-position: center;
 }
-.botao{
 
-    color: #FFF;
-    background-color: green;
-    border-radius: 50px;
-    height: 60px;
-    line-height: 20px;
-    padding: 0 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
 }
+
+@media screen and (max-width: 1024px){
+    .header{
+        display: none;
+        
+    }
+
+    .toggle{
+        display: block;
+    }
+
+
+}
+
+
