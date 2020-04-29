@@ -13,13 +13,27 @@ nav.menubar{
     /* background: #00316b; */
     /* background: rgba(0,49,107, 0.8); */
     background: #137277;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 1;
     top: 0;
     overflow: hidden;
 
 }
+nav.menubar .contato{
+    float: right;
+}
 
- ul{
+nav.menubar .contato p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+
+
+}
+
+ul{
    width: 80%;    /* A linha esta ocupando 80% de largura em relação a nav */
     margin: 0 auto;
     padding: 0;
@@ -28,19 +42,25 @@ nav.menubar{
 ul li{
     list-style: none;
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
   
 }
 
- ul li:hover{
+ul li:hover{
     background: #e91e63;
 }
 
- ul li a {
+ul li a {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
 
+}
+
+.botao:hover{
+  background-color: rgba(52, 152, 219, 1.0);
+  /* background: #137277; */
+  box-shadow: 0px 0px 10px gray;
 }
 
 .toggle{
@@ -61,7 +81,7 @@ ul li{
     /* padding: 80px 50px 0 50px; */
     font-family: sans-serif;
 
-    position: relative;  
+    position: relative;  /* Alterado 290420*/
      /* Não posso pois desconfigura o meu menu*/
 
      overflow: hidden;
@@ -71,8 +91,8 @@ ul li{
 }
 
  .containerslider .slider{
-    position: relative;
-      /* top: 60px;   */
+    position: absolute;
+      top: 0px;  
       left: 0; 
     /* padding: 5px; */
     width: 500%;
@@ -121,6 +141,7 @@ ul li{
     background-size: cover;
     background-position: center;
    }
+   
 
    .containerslider .slider .slide.slider3{
     background: url(../../assets/image/massagem.jpg);
@@ -144,25 +165,30 @@ ul li{
    {
        0% {  left: 0;  }
 
-       20%{ left: 0;  }
+       10%{ left: 0;  }
 
-       25% { left: -100%; }
+       20% { left: -100%; }
 
-       45% { left: -100%;  }
+       30% { left: -100%;  }
+
+       40% { left: -200%; }
 
        50% { left: -200%; }
 
-       70% { left: -200%; }
+       60% { left: -300%; }
 
-       75% { left: -300%; }
+       70% { left: -300%; }
 
-       75% { left: -300%; }
+       80%  {left: -400%; }
 
-       95%  {left: -300%; }
+       90%   {left: -400%;}
 
-       100%   {left: -400%;}
+      100%   {left: -400%;}
 
+      120% {left: 400%;}  
    }
+
+
 
 article.conteudo{
     /* position: relative; */
@@ -177,9 +203,23 @@ article.conteudo{
 
 }
 
+.conteudo p{
+    text-align: justify;
+}
+
+/* footer{
+    background-color: black;
+    height: 70px;
+    margin-top: 80px;
+    padding: 10px 60px;
+    box-sizing: border-box;
+    width: 90%;
+
+} */
+
 @media (max-width:768px)
 {
-   .toggle{
+    .toggle{
         display: block;
     }
 
@@ -189,18 +229,23 @@ article.conteudo{
         display: none;
     }
 
-     ul li 
+    ul li 
     {
         display: block;
         text-align: center;
     }
-     .active
+    .active
     {
         display: block;
-    } 
+    }
 
     article.conteudo{
         position:inherit;
     }
+  
+   
 }
+
+
+
 /* Ctrl + ; (ponto e virgula, comenta a linha  */
