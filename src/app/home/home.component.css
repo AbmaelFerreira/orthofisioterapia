@@ -1,8 +1,24 @@
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1, p, a{
     color: #494949;
     font-family: sans-serif ;
-    font-size: 24px;
+    font-size: 12px;
 }
 
 
@@ -227,6 +243,97 @@ article.conteudo{
     text-align: justify;
 }
 
+
+
+.cardcontainer
+{
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cardcontainer .card
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    margin: 100px 0;
+}
+
+
+.cardcontainer .card .imgBx
+{
+    position: relative;
+    left: 25px;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+}
+
+.cardcontainer .card .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardcontainer .card .contentBx
+{
+    position: relative;
+    right: 25px;
+    width: 500px;
+    height: 400px;
+    background:#000 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px 20px 100px;
+
+}
+
+.cardcontainer .card .contentBx::before
+{
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: -1;
+
+
+}
+
+.cardcontainer .card .contentBx h2{
+    font-size: 30px;
+    color: #fff;
+}
+
+.cardcontainer .card .contentBx p{
+    margin-top: 10px;
+    color: #fff;
+}
+
+.cardcontainer .card .contentBx a{
+   display: inline-block;
+   margin-top: 15px;
+   color: #fff;
+   text-decoration: none;
+   padding: 10px;
+   border: 1px solid #fff;
+
+
+}
+/*
 /* footer{
     background-color: black;
     height: 70px;
