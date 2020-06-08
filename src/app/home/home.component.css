@@ -1,4 +1,12 @@
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 h1, p, a{
     color: #494949;
     font-family: sans-serif ;
@@ -9,7 +17,20 @@ h1, p, a{
     padding: 0;
     margin: 0;
     width: 100%;
+    
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* .container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .head nav.menubar{
     
@@ -77,7 +98,7 @@ h1, p, a{
 
 nav.menubar ul{
    width: 100%;    /* A linha esta ocupando 80% de largura em relação a nav */
-    margin: 0 ;
+    margin: 0 50px 0 0 ;
     padding: 0;
 }
 
@@ -97,6 +118,15 @@ ul li a {
     font-size: 15px;
     text-decoration: none;
 
+}
+button{
+    display: block;
+    padding: 6px;
+    float: right;
+    position: relative;
+    top:7px;
+    border-radius: 5px;
+    
 }
 
 .botao:hover{
@@ -119,229 +149,6 @@ ul li a {
 
 
 
-.containerslider{
-    
-    /* padding: 80px 50px 0 50px; */
-    font-family: sans-serif;
-
-    position: relative;  /* Alterado 290420*/
-     /* Não posso pois desconfigura o meu menu*/
-
-     overflow: hidden;
-     width: 100%;
-     height: 100vh; 
-     box-sizing: border-box;
-}
-
- .containerslider .slider{
-    position: absolute;
-    top: 0;  
-    left: 0; 
-    /* padding: 5px; */
-    width: 500%;
-    height: 100%;
-    animation: animate 10s linear infinite ;
-    float: left;
-} 
-
-.containerslider .slider .slide{
-    position:relative;
-    width: 20%;
-    height: 100%;
-    float: left;
-}
-.containerslider .slider .slide .caption{
-    position: absolute;
-    bottom: 60px;
-    left: 60px;
-    right: 60px;
-    padding: 30px; 
-    background: rgba(0, 0, 0, .5);
-    /* background: rgb(0, 0, 0); */
-    
-}
-
-.containerslider .slider .slide .caption h2{
-    margin: 0 0 20px;
-    padding: 0;
-    color: #fff;
-    font-size: 18px;
-}
-.containerslider .slider .slide .caption p{
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 12px;
-}
-
-.containerslider .slider .slide.slider1{
- background: url(../../assets/image/costas.jpg);
- background-size: cover;
- background-position: center;
-}
-
-.containerslider .slider .slide.slider2{
-    background: url(../../assets/image/maos.jpg);
-    background-size: cover;
-    background-position: center;
-   }
-   
-
-.containerslider .slider .slide.slider3{
-    background: url(../../assets/image/massagem.jpg);
-    background-size: cover;
-    background-position: center;
-   }
-
-.containerslider .slider .slide.slider4{
-    background: url(../../assets/image/pes.jpg);
-    background-size: cover;
-    background-position: center;
-   }
-
-.containerslider .slider .slide.slider5{
-    background: url(../../assets/image/pesos.jpg);
-    background-size: cover;
-    background-position: center;
-   }
-
-   @keyframes animate
-   {
-       0% {  left: 0;  }
-
-       10%{ left: 0;  }
-
-       20% { left: -100%; }
-
-       30% { left: -100%;  }
-
-       40% { left: -200%; }
-
-       50% { left: -200%; }
-
-       60% { left: -300%; }
-
-       70% { left: -300%; }
-
-       80%  {left: -400%; }
-
-       90%   {left: -400%;}
-
-      100%   {left: -400%;}
-
-      120% {left: 400%;}  
-   }
-
-
-
-.artigocontainer .conteudo{
-    /* position: relative; */
-    /* background-color: grey; */
-    box-sizing: border-box;
-    text-align: center;
-    padding: 20px 60px;
-    top: 300px;
-    /* margin-left: 20%; */
-    
-    width: 90%;
-
-}
-
-.artigocontainer .conteudo p{
-    text-align: center;
-}
-
-
-
-.cardcontainer
-{
-    position: relative;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.cardcontainer .card
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;  
-    margin: 100px 0;
-}
-
-
-.cardcontainer .card .imgBx
-{
-    position: relative;
-    left: 25px;
-    width: 500px;
-    height: 400px;
-    z-index: 1;
-}
-
-.cardcontainer .card .imgBx img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.cardcontainer .card .contentBx
-{
-    position: relative;
-    right: 25px;
-    width: 500px;
-    height: 400px;
-    background:#000 ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 60px 20px 100px;
-
-}
-
-.cardcontainer .card .contentBx::before
-{
-    content: '';
-    position: absolute;
-    top: -50px;
-    bottom: -50px;
-    left: 0;
-    right: 0;
-    background: #000;
-    z-index: -1;
-
-
-}
-
-.cardcontainer .card .contentBx h2{
-    font-size: 30px;
-    color: #fff;
-}
-
-.cardcontainer .card .contentBx p{
-    margin-top: 10px;
-    color: #fff;
-}
-
-.cardcontainer .card .contentBx a{
-   display: inline-block;
-   margin-top: 15px;
-   color: #fff;
-   text-decoration: none;
-   padding: 10px;
-   border: 1px solid #fff;
-
-
-} 
 
 /* footer{
     background-color: black;

@@ -1,0 +1,14 @@
+.FormContatoContainer{
+    padding-top: 70px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.FormContatoContainer input{
+    margin: 5px;
+    padding: 10px;
+    left: 50px;
+}

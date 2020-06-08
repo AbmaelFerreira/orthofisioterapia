@@ -1,18 +1,32 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { HomeComponent } from './home/home.component';
+import { ContatoComponent } from './contato/contato.component';
+import { ConteudoHomeComponent } from './conteudo-home/conteudo-home.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SobreComponent,
-    HomeComponent
+    HomeComponent,
+    ContatoComponent,
+    ConteudoHomeComponent
   ],
   imports: [
-    BrowserModule
+     BrowserModule,
+    AppRoutingModule,
+    FormsModule ,
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

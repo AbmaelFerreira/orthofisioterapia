@@ -8,12 +8,19 @@
       </div>
       
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servico">Serviço</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a routerLink="/home">{{home}}</a></li>
+        <li><a href="#sobre">{{sobre}}</a></li>
+        <li><a href="#servico">{{servico}}</a></li>
+        <li><a href="#blog">{{blog}}</a></li>
+        <li><a routerLink="/contato">{{contato}}</a></li>
+        <!-- <li><a href="#numero">{{numero}}</a></li>
+        <li *ngIf="exibirConteudo"><a href="#contato">Conteudo oculto</a></li> -->
+
+        <!-- <button (click)="incrementar()">Somar</button>
+        <button (click)="toggleConteudo()">Exibir</button> -->
       </ul>
+
+      
 
       <!-- <div class="pesquisa">
         <form>
@@ -30,97 +37,9 @@
     <!-- <a href="#" class="botao">CLIQUE AQUI</a> -->
 </header>
 
-<div class="containerslider">
 
-  <div class="slider">
-    <div class="slide slider1">
-      <div class="caption">
-        <h2>Atendimentos: Home Care | Domiciliar</h2>
-           
-        </div>
-      </div> <!--slide-->
-  
-      <div class="slide slider2">
-        <div class="caption">
-          <h2>Atendimento: Exclusivo | Prestativo</h2>
-          
-        </div>
-      </div> <!--slide-->
-  
-      <div class="slide slider3">
-          <div class="caption">
-            <h2>Experiência | Competência</h2>
-            
-          </div>
-      </div> <!--slide-->
-  
-      <div class="slide slider5">
-          <div class="caption">
-            <h2>Determinação | Flexibilidade</h2>
-            
-          </div>
-      </div><!--slide-->
-  
-      <div class="slide slider5">
-        <div class="caption">
-          <h2>Confiança | Inspiração</h2>
-          
-        </div>
-      </div><!--slide-->
-  
-    </div> <!--slider-->
-</div> <!--containerslider-->
+
+
 
   
-<section class="artigocontainer">
 
-  <article class="conteudo">
-    <h1>Técnicas e recursos utilizados </h1>
-
-    <!-- <p>A fisioterapia ortopédica conta com uma série recursos a sua disposição. O especialista deve avaliar com cautela cada paciente, e partir do seu caso, decidir qual ou quais técnicas devem ser utilizadas. 
-      Todo o tratamento é conduzido levando em conta as necessidades e os limites individuais, sempre evitando complicações e priorizando resultados seguros e efetivos.
-      Conheça alguns dos principais recursos utilizados.
-    </p> -->
-  </article>    
-
-  <article class="conteudo">  
-    <h2>Avaliação e terapia isocinética</h2>
-
-  </article> 
-
-  <article class="conteudo"> 
-    <h2>Eletroterapia</h2>
-
-
-    <p>Modalidades: </p>
-
-    
-  </article>
-
-  <article class="conteudo"> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </article>
-
-</section>
-
-<div class="cardcontainer">
-
-  <div class="card">
-
-    <div class="imgBx">
-      <img src="../../assets/image/massagem.jpg" alt="" width="500px" height="400px" >
-    </div>
-
-    <div class="contentBx">
-      <div class="content">
-        <h2>Massagem relaxante</h2>
-        <p>Usando-se de movimentos leves, a massagem relaxante é uma excelente alternativa para o tratamento de dores musculares. Geralmente causadas por estresse, problemas de postura ou movimentos repetitivos, esses hábitos são prejudiciais, resultando em diferentes doenças. Dessa maneira, ela é uma ferramenta que promove o bem-estar, aliviando o desconforto das regiões mais afetadas.</p>
-        <a href="#">Saiba mais</a>
-      </div>
-    </div>
-
-  </div>
-</div><!--cardcontainer-->
