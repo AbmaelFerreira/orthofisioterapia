@@ -1,41 +1,65 @@
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<!--Link referente a class do botão hamburger fa fa-bars-->
+<!--  class="smooth"  -->
+  <header class="header">
+      <nav class="menubar"> <!--Alguns chamam de header-->
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+        
+        <ul>
+            <!--<li><a routerLink="/home">{{home}}</a></li>-->
+            <li><a href="#home">home</a></li>
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#servico">servico</a></li>
+            <li><a href="#contato">contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header class="head">
-
-    <nav class="menubar"> <!--Alguns chamam de header-->
-
-      <div class="toggle">
-        <i class="fa fa-bars menu" aria-hidden="true"></i>
-      </div>
-      
-      <ul>
-        <li><a routerLink="/home">{{home}}</a></li>
-        <li><a href="#sobre">{{sobre}}</a></li>
-        <li><a href="#servico">{{servico}}</a></li>
-        <li><a href="#blog">{{blog}}</a></li>
-        <li><a routerLink="/contato">{{contato}}</a></li>
-        <!-- <li><a href="#numero">{{numero}}</a></li>
-        <li *ngIf="exibirConteudo"><a href="#contato">Conteudo oculto</a></li> -->
-
-        <!-- <button (click)="incrementar()">Somar</button>
-        <button (click)="toggleConteudo()">Exibir</button> -->
-      </ul>
-
-      
-
-      <!-- <div class="pesquisa">
-        <form>
-          <input type="text" placeholder="Pesquisa ...">
-        </form>
-      </div>  -->
-
-      <!-- <div class="contato">
-        <p>(65)99270-2996   anacristina@orthofisioterapia.com.br</p>
-      </div> -->
-
-    </nav>
-
-    <!-- <a href="#" class="botao">CLIQUE AQUI</a> -->
-</header>
+    <div class="container">
+      <div class="slidershow middle">
+    
+        <div class="slides">
+    
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            
+            <div class="slide s1">
+              <img src="../../assets/image/1111.jpg" alt="">
+            </div>
+    
+            <div class="slide">
+              <img src="../../assets/image/1119.jpg" alt="">
+            </div>
+    
+            <div class="slide">
+              <img src="../../assets/image/lamp-2765969_1920.jpg" alt="">
+            </div>
+    
+            <div class="slide">
+              <img src="../../assets/image/medicine-ball-1575314_1920.jpg" alt="">
+            </div>
+    
+            <div class="slide">
+              <img src="../../assets/image/costas.jpg" alt="">
+            </div>
+    
+          </div> <!--lides-->
+    
+          <div class="navagation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+          
+          </div>
+      </div> <!--slidershow middle-->
+    </div>
 
 
 
